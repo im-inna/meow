@@ -1,0 +1,63 @@
+Last login: Sat Feb  1 15:33:15 on ttys000
+mac@Macs-MacBook-Air ~ % mkdir -p ~/homework/homework1
+mac@Macs-MacBook-Air ~ % cd ~/homework/homework1 && touch my_empty_file.txt
+mac@Macs-MacBook-Air homework1 % echo "no longer empty" > my_empty_file.txt
+mac@Macs-MacBook-Air homework1 % mv my_empty_file.txt my_homework_file.txt
+mac@Macs-MacBook-Air homework1 % cp my_homework_file.txt ~/homework/
+mac@Macs-MacBook-Air homework1 % rm ~/homework/my_homework_file.txt
+mac@Macs-MacBook-Air homework1 % tree ~ >> ~/homework/homework1/my_homework_file.txt
+zsh: command not found: tree
+mac@Macs-MacBook-Air homework1 % brew install tree
+zsh: command not found: brew
+mac@Macs-MacBook-Air homework1 % man ls
+mac@Macs-MacBook-Air homework1 % ls - r ~ >> ~homework/homework1/my_homework_file.txt
+zsh: no such user or named directory: homework
+mac@Macs-MacBook-Air homework1 % ls - r ~ >> ~/homework/homework1/my_homework_file.txt
+
+ls: -: No such file or directory
+ls: r: No such file or directory
+mac@Macs-MacBook-Air homework1 % ls -r ~ >> ~/homework/homework1/my_homework_file.txt 
+
+mac@Macs-MacBook-Air homework1 % cat ~/homework/homework1/my_homwork_file.txt
+cat: /Users/mac/homework/homework1/my_homwork_file.txt: No such file or directory
+mac@Macs-MacBook-Air homework1 % cat ~/homework/homework1/my_homework_file.txt
+no longer empty
+/Users/mac:
+Bitrix24
+Desktop
+Documents
+Downloads
+Library
+Movies
+Music
+Pictures
+Public
+cd
+cs
+homework
+hui
+id_rsa
+id_rsa.pub
+inna
+inna1
+ssh-keybeg
+ssh-keybeg
+inna1
+inna
+id_rsa.pub
+id_rsa
+hui
+homework
+cs
+cd
+Public
+Pictures
+Music
+Movies
+Library
+Downloads
+Documents
+Desktop
+Bitrix24
+mac@Macs-MacBook-Air homework1 % history >> ~/homework/homework1/my_homework_file.txt
+mac@Macs-MacBook-Air homework1 % 

@@ -1,0 +1,95 @@
+(base) ikulikova@frontend-2-2-13:~$ cd ~/class_2_1
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ nano
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ chmod +x script.sh
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ bash/script.sh
+bash: bash/script.sh: No such file or directory
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ ./my_script.sh
+bash: ./my_script.sh: No such file or directory
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ ls
+script.sh
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ cd ~/projects/mipt_dbmp_biotechnology/
+bash: cd: /home/ikulikova/projects/mipt_dbmp_biotechnology/: No such file or directory
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ cd /projects/mipt_dbmp_biotechnology/
+(base) ikulikova@frontend-2-2-13:/projects/mipt_dbmp_biotechnology$ ls
+alignment  class_2  conda
+(base) ikulikova@frontend-2-2-13:/projects/mipt_dbmp_biotechnology$ cd class_2
+(base) ikulikova@frontend-2-2-13:/projects/mipt_dbmp_biotechnology/class_2$ ls
+GSE274975_raw_counts.tsv.gz  hgnc_complete_set.tsv  md.log        SRR18748718_1.fastq.gz  TRB_10_7.tsv
+hello_world.sh               md5sum.txt             ncbi_dataset  SRR27960827_2.fastq.gz
+(base) ikulikova@frontend-2-2-13:/projects/mipt_dbmp_biotechnology/class_2$ mv GSE274975_raw_counts.tsv.gz ~/class_2_1/
+mv: cannot remove 'GSE274975_raw_counts.tsv.gz': Permission denied
+(base) ikulikova@frontend-2-2-13:/projects/mipt_dbmp_biotechnology/class_2$ cp /projects/mipt_dbmp_biotechnology/class_2/GSE274975_raw_counts.tsv.gz ~/class_2_1
+(base) ikulikova@frontend-2-2-13:/projects/mipt_dbmp_biotechnology/class_2$ cp /projects/mipt_dbmp_biotechnology/class_2/hgnc_complete_set.tsv ~/class_2_1
+(base) ikulikova@frontend-2-2-13:/projects/mipt_dbmp_biotechnology/class_2$ cp /projects/mipt_dbmp_biotechnology/class_2/md.log ~/class_2_1
+(base) ikulikova@frontend-2-2-13:/projects/mipt_dbmp_biotechnology/class_2$ cp /projects/mipt_dbmp_biotechnology/class_2/TRB_10_7.tsv ~/class_2_1
+(base) ikulikova@frontend-2-2-13:/projects/mipt_dbmp_biotechnology/class_2$ cd ~/class_2_1
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ ls
+GSE274975_raw_counts.tsv.gz  hgnc_complete_set.tsv  md.log  script.sh  TRB_10_7.tsv
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ chmod +x script.sh
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ nano 
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ chmod +x script.sh
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ ls
+GSE274975_raw_counts.tsv.gz  hgnc_complete_set.tsv  md.log  script.sh  TRB_10_7.tsv
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ chmod +x script.sh
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ ./my_script.sh
+bash: ./my_script.sh: No such file or directory
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ ./script.sh
+./script.sh: line 4: [-f: command not found
+./script.sh: line 4: [-f: command not found
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ chmod +x script.sh
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ bash/script.sh
+bash: bash/script.sh: No such file or directory
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ chmod +x script.sh
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ ./script.sh
+./script.sh: line 4: [-f: command not found
+./script.sh: line 4: [-f: command not found
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ chmod +x script.sh
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ ./script.sh
+./script.sh: line 4: [-f: command not found
+./script.sh: line 4: [-f: command not found
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ nano
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ chmod +x script_1.sh
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ ./script_1.sh
+./script_1.sh: line 9: syntax error: unexpected end of file
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ chmod +x script_1.sh
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ ./script_1.sh
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ chmod +x script_1.sh
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ ./script_1.sh
+./script_1.sh: line 5: ${file.tsv}: bad substitution
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ chmod +x script_1.sh
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ ./script_1.sh
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ chmod +x script_1.sh
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ ./script_1.sh
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ ls
+GSE274975_raw_counts.tsv.gz  md.log  name  script_1.sh  script.sh
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ ls name
+hgnc_complete_set.tsv  TRB_10_7.tsv
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ mv name/*.tsv .
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ rmdir name
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ ls
+GSE274975_raw_counts.tsv.gz  hgnc_complete_set.tsv  md.log  script_1.sh  script.sh  TRB_10_7.tsv
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ chmod +x script_1.sh
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ ./script_1.sh
+Инна, ура, ты сделала это с 100500 раза
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ ls
+GSE274975_raw_counts.tsv.gz  hgnc_complete_set  md.log  script_1.sh  script.sh  TRB_10_7
+(base) ikulikova@frontend-2-2-13:~/class_2_1$ ls TRB_10_7
+TRB_10_7.tsv
+
+
+#!/bin/bash
+
+for file in *.tsv; do
+	if [ -f "$file" ]; then
+		name="${file%.tsv}"
+		mkdir -p ~/class_2_1/"$name"
+		mv "$file" ~/class_2_1/"$name/"
+	fi
+done
+
+
+echo "Инна, ура, ты сделала это с 100500 раза"

@@ -1,0 +1,65 @@
+(blast) ikulikova@frontend-2-2-13:~/classes/class_5$ history 
+    1  conda info --envs
+    2  conda activate python_main
+    3  cd ~/classes/class_5
+    4  conda env create -n blast - f /projects/miot_dbmp_biotechnology/
+    5  conda env create -n blast - f /projects/miot_dbmp_biotechnology/conda/blast.yaml
+    6  conda env create -n blast -f /projects/miot_dbmp_biotechnology/conda/blast.yaml
+    7  cd ../class_5
+    8  conda env create -n blast -f /projects/mipt_dbmp_biotechnology/conda/blast.yaml
+    9  cp -r /projects/mipt_dbmp_biotechnology/luciferase_blast/ ./
+   10  ls
+   11  mkdir aqula
+   12  cd aqula/
+   13  mv ~/luciferase_blast/AQULA_OGS1.0.CDS.fa.gz ./
+   14  ls
+   15  mv ../luciferase_blast/AQULA_OGS1.0.CDS.fa.gz ./
+   16  gunzip AQULA_OGS1.0.CDS.fa.gz
+   17  ls
+   18  less AQULA_OGS1.0.CDS.fa 
+   19  cat AQULA_OGS1.0.CDS.fa | grep ">"
+   20  cat AQULA_OGS1.0.CDS.fa | greb ">"| wc -l
+   21  cat AQULA_OGS1.0.CDS.fa | grep ">"| wc -l
+   22  TransDecoder.LongOrfs -h
+   23  conda activate blast
+   24  TransDecoder.LongOrfs -h
+   25  TransDecoder.LongOrfs -t AQULA_OGS1.0.CDS.fa
+   26  ls
+   27  tree
+   28  cp lcruciata_luc.fasta.transdecoder_dir/longest_orfs.pep lcruciata.pep
+   29  cp AQULA_OGS1.0.CDS.fa.transdecoder_dir/longest_orfs.pep acula.pep
+   30  ls
+   31  mv acula.pep acula
+   32  cd ..
+   33  ls
+   34  cp lcruciata_luc.fasta.transdecoder_dir/longest_orfs.pep lcruciata.pep
+   35  TransDecoder.LongOrfs -t AQULA_OGS1.0.CDS.fa
+   36  TransDecoder.LongOrfs -t lcruciata_luc.fasta
+   37  cp lcruciata_luc.fasta.transdecoder_dir/longest_orfs.pep lcruciata.pep
+   38  ls
+   39  cd aqula
+   40  makeblastdb -in aqula.pep -dbtype prot
+   41  mv aqula aqula.pep
+   42  cd ..
+   43  ls
+   44  cd aqula/
+   45  ls
+   46  tree
+   47  cp AQULA_OGS1.0.CDS.fa.transdecoder_dir/longest_orfs.pep aqula.pep
+   48  cd aqula
+   49  ls
+   50  mv acula aqula
+   51  cd aqula
+   52  ls
+   53  makeblastdb -in aqula.pep -dbtype prot
+   54  cd ..
+   55  blastp -db aqula/acula.pep -query lcruciata.pep -outfmt 6 > aqula_hits.txt
+   56  blastp -db aqula/aqula.pep -query lcruciata.pep -outfmt 6 > aqula_hits.txt
+   57  tree
+   58  ls
+   59  less aqula_hits.txt
+   60  cat aqula_hits.txt | head | cut -f2 > aqula_hits_best.txt
+   61  less aqula_hits_best.txt
+   62  seqtk subseq aqula/aqula.pep aqula_hits_best.txt > aqula_hits_best.fasta
+   63  history 
+(blast) ikulikova@frontend-2-2-13:~/classes/class_5$ 
